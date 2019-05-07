@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<head>
+    <title>It's Me</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="js/matter.js"></script>
+    <script src="js/two.js"></script>
+</head>
+<body>
+    <div class="mother_container">
+        <div class="header">
+            <div class="background"></div>
+            <div class="name">
+                <img src="logo.svg" style="height: 1.2em">
+            </div>
+            <div class="nav">
+                <div class="link"><a href="#">Projects </a></div>
+                <div class="link"><a href="#">Blog</a></div>
+                <div class="link"><a href="#">Contact</a></div>
+            </div>
+        </div>
+        <div class="landing-container">
+            <div class="background"></div>
+            <div class="welcome-text">
+                <div class="title">It's me, Nabil</div>
+                <div class="subtitle">also known as Twin_N or BigFish</div>
+            </div>
+            <div class="img-container">
+                <img src="landing3.jpg">
+                <img src="landing2.png">
+            </div>
+
+        </div>
+
+        <div class="about-container">
+            <div class="animation-container"></div>
+            <div class="title">My story</div>
+            <div class="story">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac condimentum nulla. Utsuscipit posuere maximus. Aliquam sed ornare diam. Ut suscipit ante at quam placerat imperdiet. Aenean viverra iaculis eros dapibus imperdiet. Etiam laoreet justo diam, pharetra lobortis arcu dignissim at. Maecenas convallis, sapien id porttitor consectetur, risus mauris posuere elit, eget viverra est metus eget neque. Nulla magna libero, pulvinar vel eleifend et, suscipit sit amet sapien. Sed dignissim eget dui quis euismod. Etiam scelerisque maximus maximus. Vivamus ut tortor vitae arcu ultricies tempor. Mauris at lectus finibus, suscipit nulla eget, varius magna. Vestibulum facilisis nec felis ut facilisis. Phasellus tristique mauris sit amet ipsum posuere, eu lobortis sapien rhoncus. Morbi pulvinar libero nisl, et eleifend lectus pharetra vel.
+                    non, eleifend felis. Vestibulum facilisis nisl a est tempus, et porttitor ipsum imperdiet. Mauris posuere consectetur metus, id finibus neque maximus vel. Nulla vel lorem vel mi tincidunt aliquet at vel augue. Aliquam blandit metus ut arcu posuere gravida. Nam massa nibh, maximus et vestibulum non, tincidunt quis neque. Etiam fermentum molestie massa vel pellentesque. Maecenas luctus viverra nibh a viverra       
+                </p>
+            </div>
+        </div>
+
+        <div class="skills-container">
+            <div class="skills-headline">
+                Jack of all tades <br> &nbsp &nbsp master of none
+            </div>
+
+            <div class="a-coder">
+                <div class="headline">
+                    <h1>a coding and networking enthusiast</h1>
+                </div>
+                <div class="container">
+                    <div class="title">A Coder</div>
+                    <div class="projects">
+                        <div class="title"></div>
+                        <div class="project"></div>
+                    </div>
+                    <div class="interests">
+                        <div class="interest"></div>
+                    </div>
+                    <div class="skills">
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+<!--
+        //let storyTextNode = document.querySelector('.story > p')
+
+    //spliting the words of story for checking where a line ends
+    let storyText = storyTextNode.innerText.trim();
+    let words = storyText.split(" ");
+    let currentSearchIndex = 0;                                 //this is a kinda pointer to keep track of where the last found word was
+    let lineNo = 1;
+    let storyToReplaceWith = "";
+    let newLine = true;
+    for(let i=0; i<words.length-1; i++){
+        if(newLine){
+            storyToReplaceWith += "<span>";
+            newLine = !newLine;
+        }
+        let newStoryText = "";
+        let wordIndex = storyText.indexOf(words[i], currentSearchIndex);
+        newStoryText = storyText.slice(0, wordIndex) + "<span>" + words[i] + "</span>" + " " + "<span>" + words[i+1] + "</span>" + storyText.slice(wordIndex + words[i].length + words[i+1].length +1); //+1 is for the space character between between words[i] and words[i+1]
+        storyTextNode.innerHTML = newStoryText;
+        let spans = storyTextNode.querySelectorAll('span');
+        storyToReplaceWith += " " + words[i];
+        if(spans[1].offsetTop > spans[0].offsetTop){
+            storyToReplaceWith += "</span>";
+            newLine = true;
+        }
+        currentSearchIndex = wordIndex + words[i].length;
+        //console.log(newStoryText);
+        console.log(words[i]);
+        console.log(currentSearchIndex)
+        console.log(lineNo)
+        console.log(storyToReplaceWith);
+    }
+    storyToReplaceWith += "</span>";
+    storyTextNode.innerHTML = storyToReplaceWith;
+-->
