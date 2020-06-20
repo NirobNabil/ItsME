@@ -1,0 +1,336 @@
+body {
+  display: flex;
+  min-width: 100vw;
+  width: 300vw;
+  justify-content: center;
+  margin: 0;
+  overflow: scroll;
+}
+body a {
+  color: inherit;
+}
+
+.mother_container {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* header start */
+.header {
+  left: 0%;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  display: none;
+  flex-direction: row;
+  padding-top: 1em;
+  justify-content: space-between;
+}
+.header .onWhite a {
+  font-family: raleway_regular !important;
+  color: #222222;
+}
+.header .onBlack a {
+  color: #FEFEFE;
+}
+.header .onBlack a:after {
+  background: white !important;
+}
+.header .background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+  top: -100%;
+}
+.header .name {
+  margin-left: 5vw;
+  padding: 2.5em;
+  font-family: raleway_regular;
+  font-size: raleway_regular;
+}
+.header .name img {
+  height: 1.2em;
+}
+.header .nav {
+  width: 28%;
+  display: flex;
+  align-self: center;
+}
+.header .link {
+  position: relative;
+  z-index: 2;
+  padding: 2em 1.5em;
+  font-family: raleway_regular;
+}
+.header .link a {
+  font-family: raleway;
+  font-weight: 300;
+  text-decoration: none;
+  position: relative;
+}
+.header .link a:after {
+  content: "";
+  background: black;
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: 0.3s;
+}
+.header .link a:hover:after {
+  width: 100%;
+}
+
+.landing-container {
+  position: relative;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 7vw 35em 1fr;
+  grid-template-rows: repeat(12, 1fr);
+}
+.landing-container .background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+.landing-container .welcome-text {
+  width: 100%;
+  color: white;
+  margin-top: 5em;
+  grid-column: 2/3;
+  grid-row: 6/7;
+  line-height: 3.5em;
+}
+.landing-container .welcome-text .title {
+  font-family: raleway;
+  font-weight: 700;
+  font-size: 4em;
+}
+.landing-container .welcome-text .subtitle {
+  font-family: raleway;
+  font-weight: 500;
+  font-size: 1.8em;
+}
+.landing-container .img-container {
+  grid-column: 3/4;
+  grid-row: 1/13;
+  display: grid;
+  grid-template-rows: repeat(8, calc(100%/8));
+  grid-template-columns: repeat(6, calc(100%/6));
+}
+.landing-container .img-container img:nth-child(1) {
+  padding: 4em;
+  grid-column: 2/3;
+  grid-row: 2/7;
+  z-index: 2;
+  height: 60vh;
+}
+.landing-container .img-container img:nth-child(2) {
+  height: 40vh;
+  grid-column: 4/7;
+  grid-row: 5/7;
+  z-index: 1;
+}
+
+.about-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-container .title {
+  font-family: raleway;
+  font-weight: 800;
+  font-size: 4vw;
+  width: 20vw;
+  padding: 2vw 0em;
+  text-align: right;
+}
+.about-container .partition {
+  margin: 0 3em;
+  width: 0.5em;
+  height: 19em;
+  background: black;
+}
+.about-container .story {
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+}
+.about-container .story p {
+  box-sizing: border-box;
+  font-family: raleway_medium;
+  font-weight: 400;
+  font-size: 1.3vw;
+  width: 100%;
+  word-wrap: normal;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+.skills-container {
+  width: 100%;
+  position: relative;
+}
+.skills-container .skills-headline {
+  box-sizing: content-box;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: raleway_semibold;
+  font-weight: 800;
+  text-align: center;
+  font-size: 3.7vw;
+  padding-top: 2vw;
+  min-height: 25vh;
+  max-height: 25vh;
+  position: relative;
+}
+.skills-container .headline {
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+.skills-container .a-coder .headline {
+  box-sizing: border-box;
+  font-family: raleway_semibold;
+  position: absolute;
+  width: 50vw;
+  height: 65vh;
+  padding-top: 10vh;
+  padding-left: 4vw;
+  transition: 0.2s;
+  transform: translate(0%, 0vw);
+}
+.skills-container .a-coder .headline:hover {
+  transform: translate(0%, -1.3vh);
+}
+.skills-container .a-coder .headline ::after {
+  pointer-events: none;
+  box-sizing: border-box;
+  z-index: -2;
+  position: absolute;
+  content: "";
+  left: -100vw;
+  width: 150vw;
+  top: 30vh;
+  height: 1vh;
+  transform-origin: 100% 100%;
+  transform: skew(0deg, -15deg);
+  border-bottom: 2vh solid black;
+}
+.skills-container .a-robot .headline {
+  box-sizing: border-box;
+  font-family: raleway_semibold;
+  position: absolute;
+  width: 50vw;
+  height: 65vh;
+  margin-left: 50vw;
+  padding-top: 10vh;
+  padding-left: 20vw;
+  transition: 0.2s;
+  transform: translate(0%, 0vw);
+}
+.skills-container .a-robot .headline:hover {
+  transform: translate(0%, -1.3vh);
+}
+.skills-container .a-robot .headline ::after {
+  box-sizing: border-box;
+  z-index: -2;
+  position: absolute;
+  content: "";
+  left: 0vw;
+  width: 150vw;
+  top: 30vh;
+  height: 1vh;
+  transform-origin: 0 0;
+  transform: skew(0deg, 15deg);
+  border-bottom: 2vh solid black;
+}
+.skills-container .others .headline {
+  box-sizing: border-box;
+  font-family: raleway_semibold;
+  position: absolute;
+  top: 54.5vh;
+  padding-top: 5vh;
+  left: 50vw;
+  transition: 0.2s;
+  transform-origin: 0% 0%;
+  transform: translate(-50%, 0%);
+}
+.skills-container .others .headline:hover {
+  transform: translate(-50%, 1.3vh);
+}
+.skills-container .others ::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  margin-top: -5vh;
+  left: 50%;
+  background: #FCEE21;
+  width: 300vw;
+  height: 300vw;
+  transform-origin: 0% 0%;
+  transform: rotate(45deg) skew(-25deg, -25deg);
+}
+.skills-container .container {
+  position: absolute;
+  width: 50vw;
+  position: absolute;
+  top: 35vh;
+  left: -70vw;
+}
+.skills-container .container .child-container {
+  margin: 6vh 3vw;
+}
+.skills-container .container .child-container > .title {
+  font-size: 2em;
+  font-family: raleway_bold;
+}
+.skills-container .container .child-container .content {
+  margin-top: 2em;
+  display: flex;
+  font-family: raleway_regular;
+}
+.skills-container .container .child-container .content .project {
+  margin-right: 2em;
+  max-width: 12em;
+}
+.skills-container .container .child-container .content .project .title {
+  padding-bottom: 0.3em;
+  font-family: raleway_semibold;
+  font-size: 1.5em;
+}
+.skills-container .container .child-container .content .project .role {
+  padding-bottom: 0.3em;
+  font-family: raleway_bold;
+}
+.skills-container .container .child-container .content .skill, .skills-container .container .child-container .content .interest {
+  width: 8em;
+  height: 2em;
+  font-size: 1.3em;
+  font-family: raleway_semibold;
+}
+.skills-container .container .child-container .content .interest {
+  width: 12em;
+}
+.skills-container .container .skills > .content, .skills-container .container .interests > .content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 40vw;
+}
+
+/*# sourceMappingURL=home.css.map */

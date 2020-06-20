@@ -1,0 +1,77 @@
+@font-face{
+	font-family: CODE_bold;
+	src: url(../fonts/CODE_Bold.otf);
+}
+@font-face{
+	font-family: CODE_regular;
+	src: url(../fonts/CODE_Light.otf);
+}
+@font-face{
+	font-family: Neoteric_bold;
+	src: url(../fonts/NEOTERIC_bold.ttf);
+}
+@font-face{
+	font-family: Neoteric_regular;
+	src: url(../fonts/NEOTERIC_regular.ttf);
+}
+@font-face{
+	font-family: Rock_regular;
+	src: url(../fonts/ROCK.TTF);
+}
+@font-face{
+	font-family: Rock_bold;
+	src: url(../fonts/rockb.ttf);
+}
+@font-face{
+	font-family: Dosis_bold;
+	src: url("../fonts/dosis_family/Dosis-Bold.otf")
+}
+@font-face{
+	font-family: Dosis_ExtraBold;
+	src: url("../fonts/dosis_family/Dosis-ExtraBold.otf")
+}
+@font-face{
+	font-family: quicksand_regular;
+	src: url("../fonts/Quicksand/Quicksand-Regular.ttf")
+}
+@font-face{
+	font-family: quicksand_bold;
+	src: url("../fonts/Quicksand/Quicksand-Bold.ttf")
+}
+@font-face{
+	font-family: quicksand_medium;
+	src: url("../fonts/Quicksand/Quicksand-Medium.ttf")
+}
+@font-face{
+	font-family: raleway_regular;
+	src: url("../fonts/Raleway/Raleway-Regular.ttf")
+}
+@font-face{
+	font-family: raleway_medium;
+	src: url("../fonts/Raleway/Raleway-Medium.ttf")
+}
+@font-face{
+	font-family: raleway_semibold;
+	src: url("../fonts/Raleway/Raleway-SemiBold.ttf")
+}
+@font-face{
+	font-family: raleway_light;
+	src: url("../fonts/Raleway/Raleway-Light.ttf")
+}
+@font-face{
+	font-family: raleway_black;
+	src: url("../fonts/Raleway/Raleway-Black.ttf")
+}
+@font-face{
+	font-family: raleway_extrabold;
+	src: url("../fonts/Raleway/Raleway-ExtraBold.ttf")
+}
+@font-face{
+	font-family: raleway_extralight;
+	src: url("../fonts/Raleway/Raleway-ExtraLight.ttf")
+}
+@font-face{
+	font-family: raleway_bold;
+	src: url("../fonts/Raleway/Raleway-Bold.ttf")
+}
+
